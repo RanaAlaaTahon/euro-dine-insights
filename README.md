@@ -150,7 +150,9 @@
 
 ## Wireframe
 
-![Wireframe]()
+- The wireframe layout for EuroDine Insights Project was created using Figma to plan the structure and organization of key visual elements. It outlines where charts, maps, and summary cards will be placed, helping to ensure a clear and logical flow of information. This stage focuses on layout and functionality rather than design details, allowing for easy adjustments before building the actual dashboard.
+
+![Wireframe](Images\wireframe.png)
 
 ## Tableau Dashboard
 

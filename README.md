@@ -1,6 +1,7 @@
 # **EuroDine Insights**
 
-**EuroDine Insights**
+**EuroDine Insights** is a data analysis project based on the [TripAdvisor Restaurants Info for 31 Euro-Cities Dataset](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data)
+, featuring over 125,000 restaurants across 31 European cities. Using Python-based analytical and visualization tools, the project explores customer ratings, cuisine preferences, and regional dining trends, through statistical testing.
 
 ## Table of Contents
 
@@ -41,108 +42,89 @@
 
 * The data is a .csv file comma-separated that contains 125 433 entries (restaurants). It is structured as follow:
 
-  - Name: name of the restaurant
+| Column                | Description                                                                                                             |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Name**              | Name of the restaurant                                                                                                  |
+| **City**              | City where the restaurant is located                                                                                    |
+| **Cuisine Style**     | Cuisine style(s) of the restaurant, stored as a Python list                                                             |
+| **Ranking**           | Rank of the restaurant among all restaurants in the city (float)                                                        |
+| **Rating**            | Customer rating of the restaurant on a scale from 1 to 5 (float)                                                        |
+| **Price Range**       | Price category of the restaurant among 3 categories (categorical)                                                       |
+| **Number of Reviews** | Total number of customer reviews (float)                                                                                |
+| **Reviews**           | Two sample reviews with their dates, stored as a list of lists: first list contains reviews, second list contains dates |
+| **URL_TA**            | Part of the TripAdvisor URL for the restaurant page, after 'www.tripadvisor.com' (string)                               |
+| **ID_TA**             | Unique identifier of the restaurant in the TripAdvisor database (one letter + number)                                   |
 
-  - City: city location of the restaurant
+## Business Requirements
 
-  - Cuisine Style: cuisine style(s) of the restaurant, in a Python list object.
+The primary goal of this project is to translate business requirements into actionable insights through intuitive and effective visualizations. Each visualization is designed to directly address specific business questions and support data-driven decision-making:
 
-  - Ranking: rank of the restaurant among the total number of restaurants in the city as a float object.
+- **Customer Preferences & Cuisine Ratings**: Identify which cuisines are most favored by customers and whether preferences differ across regions.
 
-  - Rating: rate of the restaurant on a scale from 1 to 5, as a float object.
+- **Price Perception & City Comparison**: Understand how pricing influences customer ratings and how price ranges vary across cities.
 
-  - Price Range: price range of the restaurant among 3 categories , as a categorical type.
+- **Cuisine Diversity & Ratings: Requirement**: Explore whether restaurants offering multiple cuisine styles perform better in terms of ratings.
 
-  - Number of Reviews: number of reviews that customers have let to the restaurant, as a float object.
+- **Regional Insights & Market Opportunities**: Identify underrepresented or highly-rated niche cuisines to inform market strategy.
 
-  - Reviews: 2 reviews that are displayed on the restaurants scrolling page of the city, as a list of list object where the first list contains the 2 reviews, and the second le dates when these reviews were written.
+## Hypothesis and Validation
 
-  - URL_TA: part of the URL of the detailed restaurant page that comes after 'www.tripadvisor.com' as a string object.
+1. **Price Perception**
 
-  - ID_TA: identification of the restaurant in the TA database constructed a one letter and a number.
+   - Hypothesis: Restaurants with higher prices are more likely to achieve better customer ratings.
 
-  ## Business Requirements
+   - Variables: Price Range (Low, Medium, High), Rating (Excellent, Average, Poor)
 
-  ## Hypothesis and Validation
+   - Validation Approach: Examine the correlation between rice range and rating using pie charts.
 
-  1. **Price Perception**
+2. **Price Range vs. City**
 
-     - Hypothesis: Restaurants with higher prices are more likely to achieve better customer ratings.
+   - Hypothesis: The the distribution of restaurant price ranges varies across different European cities. Wealthier European cities, such as Geneva and Zurich, have a higher proportion of expensive restaurants compared to cities like Budapest and Krakow.
 
-     - Variables: Price Range (Low, Medium, High), Rating (Excellent, Average, Poor)
+   - Variables: Price Range, City
 
-     - Validation Approach: Examine the correlation between rice range and rating using pie charts.
+   - Validation Approach: Investigates the correlation between price range and city by using stacked bar chart and bar charts.
 
-  2. **Price Range vs. City**
+3. **Cuisine Counts vs. Rating**
 
-     - Hypothesis: The the distribution of restaurant price ranges varies across different European cities. Wealthier European cities, such as Geneva and Zurich, have a higher proportion of expensive restaurants compared to cities like Budapest and Krakow.
+   - Hypothesis: Restaurants offering a greater number of cuisines tend to receive higher customer ratings and potentially more reviews due to menu diversity.
 
-     - Variables: Price Range, City
+   - Variables: Cuisines Counts, Rating
 
-     - Validation Approach: Investigates the correlation between price range and city by using stacked bar chart and bar charts.
+   - Validation Approach: Examine the correlation between cuisine counts and ratings using boxplot, line chart, bar charts and applying statistical testing.
 
-  3. **Cuisine Counts vs. Rating**
+4. **Cuisine-Based Preferences**
 
-     - Hypothesis: Restaurants offering a greater number of cuisines tend to receive higher customer ratings and potentially more reviews due to menu diversity.
+   - Hypothesis: Certain cuisines consistently receive higher customer ratings than others due to cultural preferences, dining experiences, and the inherent qualities of the cuisine.
 
-     - Variables: Cuisines Counts, Rating
+   - Variables: Cuisine List, Rating, City
 
-     - Validation Approach: Examine the correlation between cuisine counts and ratings using boxplot, line chart and bar charts.
+   - Validation Approach: Compare average ratings across different cuisines using bar charts in various cities and statistical testing.
 
-  4. **Cuisine-Based Preferences**
+5. **Cuisine vs. Price Range**
 
-     - Hypothesis: Certain cuisines consistently receive higher customer ratings than others due to cultural preferences, dining experiences, and the inherent qualities of the cuisine.
+   - Hypothesis: Certain cuisines are associated with specific price ranges, reflecting differences in ingredients, preparation complexity, and dining experience. For example, French and Seafood cuisines are more likely to appear in higher price ranges, while Fast Food or casual cuisines dominate lower price categories.
 
-     - Variables: Cuisine List, Rating, City
+   - Variables: Cuisine List, Price Range
 
-     - Validation Approach: Compare average ratings across different cuisines using bar charts in various cities.
+   - Validation Approach: Analyze the relationship between cuisine type and price range using bar charts visualizations.
 
-  5. **Cuisine vs. Price Range**
+## Project Plan
 
-     - Hypothesis: Certain cuisines are associated with specific price ranges, reflecting differences in ingredients, preparation complexity, and dining experience. For example, French and Seafood cuisines are more likely to appear in higher price ranges, while Fast Food or casual cuisines dominate lower price categories.
+| Phase                                  | Description                                                                                                                                                                                                                                                                 |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Research Questions & Hypotheses** | Define the main analytical objectives and relationships to explore, including:<br>• Price perception and city-level variations<br>• City vs. price range<br>• Cuisine diversity and its effect on ratings<br>• Cuisine preferences<br>• Cuisine type vs. price relationship |
+| **2. Data Collection**                 | Gather the dataset from [Kaggle](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data)                                                                                                                                                         |
+| **3. Data Cleaning & Preprocessing**   | • Handle missing values<br>• Standardize cuisine names<br>• Change/convert data types<br>• Remove duplicates<br>• Add new derived columns<br>• Drop unused columns<br>• Save the cleaned dataset as a new CSV file                                                          |
+| **4. Exploratory Data Analysis (EDA)** | • Visualize key variable distributions<br>• Identify trends, patterns, and outliers<br>• Perform hypothesis testing (e.g., ANOVA, Tukey’s HSD) to validate findings                                                                                                         |
+| **5. Dashboard Development**           | • Design a wireframe for an interactive dashboard<br>• Develop the dashboard in **Tableau**<br>• Display key metrics and visualizations aligned with research hypotheses                                                                                                    |
+| **6. Key Insights & Conclusion**       | • Summarize main findings and observed patterns<br>• Highlight cultural and regional dining preferences<br>• Provide recommendations for improving restaurant strategies and market insights                                                                                |
 
-     - Variables: Cuisine List, Price Range
+## The rationale to map the business requirements to the data visualizations
 
-     - Validation Approach: Analyze the relationship between cuisine type and price range using bar charts visualizations.
+## Analysis Techniques Used
 
-  ## Project Plan
-
-- Define Research Questions & Hypotheses:
-
-  - Identify the key relationships to explore: price perception, city vs price range, cuisine diversity and ratings, cuisine preferences, and cuisine vs price.
-
-- Data Collection:
-
-  - Gather the dataset from Kaggle
-
-- Data Cleaning & Preprocessing:
-
-  - Handle missing values
-  - Standardized cuisine names
-  - Change data types
-  - Remove duplicates
-  - Add new columns
-  - Drop unused columns
-
-- Save the cleaned data to a new CSV file
-
-- Exploratory Data Analysis (EDA):
-
-  - Visualize distributions of key variables, identify trends, outliers, and patterns.
-  - Hypothesis Testing
-
-- Dashboard Creation
-
-  - Design and develop an interactive dashboard by first creating a wireframe and then implementing it in Tableau.
-  - The dashboard will showcase key metrics and visualizations that align with and support the hypotheses.
-
-- Project Key Insights and conclusion
-
-  ## The rationale to map the business requirements to the data visualizations
-
-  ## Analysis Techniques Used
-
-  ## Ethical Considerations
+## Ethical Considerations
 
 - The dataset came from Kaggle and do not have any legal or societal issues. There was no personal data within the dataset which could expose or identify anything personal to a particular individual.
 
@@ -173,7 +155,7 @@
 - Seaborn
 - Plotly
 - Tableau
-- Scikit learn
+- scipy
 
 ## Credits
 

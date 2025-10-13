@@ -219,6 +219,12 @@ The wireframe layout for EuroDine Insights Project was created using Figma to pl
 
 ## Unfixed Bugs
 
+No unfixed bugs were identified across the ETL, visualization notebook, or dashboard components. All features are functioning as intended, and the project delivers the expected analytical insights and interactive experience.
+
+While there were no technical bugs left unresolved, I encountered some challenges while working with Tableau due to my limited experience with the tool. These were mainly related to layout adjustments and dashboard structuring rather than functional errors. Through trial, documentation review, and experimentation, I was able to resolve these issues and complete the dashboard.
+
+Moving forward, I plan to continue improving my Tableau skills to work more efficiently and make use of more advanced features in future projects.
+
 ## Development Roadmap
 
 The EuroDine Insights project followed a structured development roadmap to transform raw data into actionable insights and a fully interactive Tableau dashboard. Below is a visual overview of the key phases, challenges, and strategies:

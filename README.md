@@ -29,10 +29,15 @@
 
 ## Project Outcomes and Key Findings
 
--
--
--
--
+- Higher price ranges are clearly linked to better ratings, suggesting that diners associate higher prices with better experiences.
+
+- Price distribution varies significantly by city, reflecting local economies: richer cities host more upscale dining, while budget options dominate in more affordable markets.
+
+- There’s a clear positive relationship between cuisine variety and customer ratings, more diverse menus tend to receive better reviews.
+
+- Local culinary traditions shape city-level dining patterns, but niche cuisines achieve standout ratings, indicating strong appreciation for authentic and distinctive food experiences.
+
+- Cuisines naturally segment by price, reflecting ingredients, preparation complexity, and dining experience, from affordable fast food to premium French and Seafood dining.
 
 ## Dataset Content
 
@@ -120,15 +125,82 @@ The primary goal of this project is to translate business requirements into acti
 | **5. Dashboard Development**           | • Design a wireframe for an interactive dashboard<br>• Develop the dashboard in **Tableau**<br>• Display key metrics and visualizations aligned with research hypotheses                                                                                                    |
 | **6. Key Insights & Conclusion**       | • Summarize main findings and observed patterns<br>• Highlight cultural and regional dining preferences<br>• Provide recommendations for improving restaurant strategies and market insights                                                                                |
 
-## The rationale to map the business requirements to the data visualizations
+## The Rationale to Map the Business Requirements to the Data Visualizations
+
+| **Business Requirement**                     | **Rationale**                                                                                                                                                                     | **Data Visualization(s)**                                                                                     |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Customer Preferences & Cuisine Ratings**   | Identify which cuisines receive the highest ratings and whether preferences vary across European cities. This helps businesses understand cultural preferences and target demand. | Bar charts comparing average ratings by cuisine type across cities; ANOVA tests to detect rating differences. |
+| **Price Perception & City Comparison**       | Examine how pricing impacts customer ratings and how price categories are distributed across different cities, revealing economic patterns and customer expectations.             | Pie charts for price vs rating distribution; Stacked bar charts for price range distribution per city.        |
+| **Cuisine Diversity & Ratings**              | Explore whether offering multiple cuisines leads to higher customer ratings and more reviews, providing strategic insight for menu diversification.                               | Boxplots and line charts showing cuisine counts vs ratings; ANOVA to test differences between groups.         |
+| **Regional Insights & Market Opportunities** | Detect underrepresented but high-rated cuisines to identify untapped opportunities and guide market positioning strategies.                                                       | Bar charts of cuisine prevalence vs average ratings; City-level cuisine distribution maps and rankings.       |
 
 ## Analysis Techniques Used
+
+This project applied a combination of exploratory data analysis (EDA), statistical testing, and data visualization to uncover insights from the [TripAdvisor Restaurants dataset](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data). The analytical approach was structured to progressively address each business requirement through targeted techniques.
+
+- **Methods**
+
+  - EDA: Data cleaning, profiling, and transformation (e.g., exploding cuisine lists, standardizing price categories).
+
+  - Visualization: Bar charts, stacked bar charts, pie charts, boxplots, and line charts to explore patterns in price, cuisine, and ratings.
+
+  - Statistical Testing: ANOVA to test differences in ratings across cuisine types and cuisine variety groups.
+
+- **Limitations & Alternatives**
+
+  - Uneven data distribution across cuisines and cities → Focused on top cuisines.
+
+  - Categorical price data limited regression → Used visual and proportional analysis.
+
+  - No temporal data → Focused on cross-sectional insights.
+
+- **Structuring the Analysis**
+
+  - Analysis followed business hypotheses, moving from city-level trends to price vs. rating, cuisine diversity, cuisine preferences, and cuisine–price positioning.
+
+- **AI tools supported**
+
+  - Ideation of hypotheses and business questions
+
+  - Code optimization for data wrangling and statistical tests
 
 ## Ethical Considerations
 
 - The dataset came from Kaggle and do not have any legal or societal issues. There was no personal data within the dataset which could expose or identify anything personal to a particular individual.
 
 ## Dashboard Design
+
+The layout follows a top-down storytelling structure, which helps users grasp complex insights quickly while maintaining the option to explore deeper through filters and interactions. The dashboard was designed using Tableau after creating and refining an initial wireframe, which guided the placement of visual elements and ensured a clear, consistent flow of information throughout the final design.
+
+![Dashboard](Images\Dashboard.png)
+
+| Section          | Visualization / Widget          | Description                                                                                                              |
+| ---------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Header**       | KPI cards                       | Displays total number of **cities (31)**, **restaurants (74,221)**, and **cuisines (118)**.                              |
+| **Top Left**     | Line chart + Filters            | Shows **Average Rating by Cuisine Variety**, with filters for cuisine variety categories (Single, Small, Medium, Large). |
+| **Top Middle**   | Map                             | Interactive **Euro map** highlighting the **number of restaurants per country**. Users can filter by country.            |
+| **Top Right**    | Pie charts                      | Displays **rating category proportions (Excellent, Average, Poor)** for each **price range** (Low, Medium, High).        |
+| **Middle Left**  | Bar chart + Multi-select filter | **Top 20 cuisines** by restaurant count, with the ability to toggle cuisines.                                            |
+| **Bottom Left**  | Grouped bar chart               | **Top 5 cuisines per price range** (Low, Medium, High), enabling price–cuisine comparisons.                              |
+| **Bottom Right** | Stacked bar chart               | **Proportion of price ranges by city**, illustrating affordability and price distribution across cities.                 |
+
+- **Design Approach**
+
+  - High-level overview → Key KPIs and map
+
+  - Key hypotheses → Cuisine variety ratings, price–rating patterns, cuisine popularity
+
+  - Detailed breakdown → Cuisine–price relationships and city-level price range proportions
+
+- **Communication of Insights**
+
+  - The dashboard is designed for both technical and non-technical audiences.
+
+  - Non-technical users: Can explore key patterns using interactive filters and intuitive visuals (pie charts, bar charts, maps).
+
+  - KPI cards and clean labeling provide instant understanding of scale and distribution.
+
+  - Technical users: Can drill down into cuisine categories, price ranges, and city-level distributions for deeper analysis.
 
 ## Wireframe
 

@@ -172,17 +172,21 @@ This project applied a combination of exploratory data analysis (EDA), statistic
 
 The layout follows a top-down storytelling structure, which helps users grasp complex insights quickly while maintaining the option to explore deeper through filters and interactions. The dashboard was designed using Tableau after creating and refining an initial wireframe, which guided the placement of visual elements and ensured a clear, consistent flow of information throughout the final design.
 
+The full interactive Tableau dashboard can be found [here](https://public.tableau.com/authoring/EuroDineInsightsDashboard/EuroDineInsightsDashboard#1), to explore all insights and visualizations in detail.
+
 ![Dashboard](Images\Dashboard.png)
 
-| Section          | Visualization / Widget          | Description                                                                                                              |
-| ---------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Header**       | KPI cards                       | Displays total number of **cities (31)**, **restaurants (74,221)**, and **cuisines (118)**.                              |
-| **Top Left**     | Line chart + Filters            | Shows **Average Rating by Cuisine Variety**, with filters for cuisine variety categories (Single, Small, Medium, Large). |
-| **Top Middle**   | Map                             | Interactive **Euro map** highlighting the **number of restaurants per country**. Users can filter by country.            |
-| **Top Right**    | Pie charts                      | Displays **rating category proportions (Excellent, Average, Poor)** for each **price range** (Low, Medium, High).        |
-| **Middle Left**  | Bar chart + Multi-select filter | **Top 20 cuisines** by restaurant count, with the ability to toggle cuisines.                                            |
-| **Bottom Left**  | Grouped bar chart               | **Top 5 cuisines per price range** (Low, Medium, High), enabling price–cuisine comparisons.                              |
-| **Bottom Right** | Stacked bar chart               | **Proportion of price ranges by city**, illustrating affordability and price distribution across cities.                 |
+| #   | Dashboard Section / Page                                     | Content Description                                                                                                  | Visualization Type | Key Filters / Widgets        | Page Link                                                                                                                        |
+| --- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ------------------ | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Header Section**                                           | Displays overall KPIs: total number of cities, restaurants, and cuisines. Sets the context for the entire dashboard. | KPI Cards / Text   | –                            | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/Insights#1)                                           |
+| 2   | **The Proportion of Rating Categories for Each Price Range** | Compares Excellent, Average, and Poor ratings across High, Medium, and Low price ranges.                             | Pie Charts (x3)    | Rating Category, Price Range | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/1_TheProportionofRatingCategoriesforEachPriceRange#1) |
+| 3   | **Proportion of Price Ranges by City**                       | Compares how different price categories are distributed across major cities.                                         | Stacked Bar Chart  | City, Price Range            | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/2_ProportionofPriceRangesbyCity#1)                    |
+| 4   | **Average Rating by Cuisine Variety**                        | Shows how restaurant ratings change based on the number of cuisines offered (Single → Large Variety).                | Line Chart         | Cuisine Variety              | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/3_AverageRatingbyCuisineVariety#1)                    |
+| 5   | **Most Popular Cuisine in Each City**                        | Shows the most popular cuisines in each city.                                                                        | Bar Charts         | Cuisine List, City           | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/4_MostPopularCuisineinEachCity#1)                     |
+| 6   | **Top 20 Most Popular Cuisines in Europe**                   | Displays the most common cuisines based on restaurant count.                                                         | Bar Chart          | Cuisine List                 | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/4_Top20MostPopularCuisinesinEurope#1)                 |
+| 7   | **Top 5 Most Popular Cuisines in Each Price Range**          | Shows the most popular cuisines segmented by price range.                                                            | Bar Charts (x3)    | Cuisine List, Price Range    | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/5_Top5MostPopularCuisinesinEachPriceRange#1)          |
+| 8   | **Euro Countries Map with Number of Restaurants**            | Highlights restaurant distribution across European countries.                                                        | Map                | Country Name                 | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/EuroCountriesMapwithNumberofRestaurants#1)            |
+| 9   | **Dashboard**                                                | Provides a complete overview of all KPIs, trends, and insights from all the sheets.                                  | All Charts         | All Filters                  | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/EuroDineInsightsDashboard#1)                          |
 
 - **Design Approach**
 
@@ -207,8 +211,6 @@ The layout follows a top-down storytelling structure, which helps users grasp co
 - The wireframe layout for EuroDine Insights Project was created using Figma to plan the structure and organization of key visual elements. It outlines where charts, maps, and summary cards will be placed, helping to ensure a clear and logical flow of information. This stage focuses on layout and functionality rather than design details, allowing for easy adjustments before building the actual dashboard.
 
 ![Wireframe](Images\wireframe.png)
-
-## Tableau Dashboard
 
 ## Kanban Board
 

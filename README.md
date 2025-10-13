@@ -3,31 +3,33 @@
 **EuroDine Insights** is a data analysis project based on the [TripAdvisor Restaurants Info for 31 Euro-Cities Dataset](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data)
 , featuring over 125,000 restaurants across 31 European cities. Using Python-based analytical and visualization tools, the project explores customer ratings, cuisine preferences, and regional dining trends, through statistical testing.
 
-## Table of Contents
+## <a name='TableofContents'></a>Table of Contents
 
 <details>
   <summary>Click here to expand the contents</summary>
 
-- [Project Outcomes and Key Findings](#project-outcomes-and-key-findings)
-- [Dataset Content](#dataset-content)
-- [Business Requirements](#business-requirements)
-- [Hypothesis and Validation](#hypothesis-and-validation)
-- [Project Plan](#project-plan)
-- [The rationale to map the business requirements to the data visualizations](#-the-rationale-to-map-the-business-requirements-to-the-data-visualizations)
-- [Analysis Techniques Used](#analysis-techniques-used)
-- [Ethical Considerations](#ethical-considerations)
-- [Dashboard Design](#dashboard-design)
-- [Wireframe](#wireframe)
-- [Tableau Dashboard](#tableau-dashboard)
-- [Kanban Board](#kanban-board)
-- [Unfixed Bugs](#unfixed-bugs)
-- [Development Roadmap](#development-roadmap)
-- [Main Data Analysis Libraries](#main-data-analysis-libraries)
-- [Credits](#credits)
+1. [Table of Contents](#TableofContents)
+2. [Project Outcomes and Key Findings](#ProjectOutcomesandKeyFindings)
+3. [Dataset Content](#DatasetContent)
+4. [Business Requirements](#BusinessRequirements)
+5. [Hypothesis and Validation](#HypothesisandValidation)
+6. [Project Plan](#ProjectPlan)
+7. [The Rationale to Map the Business Requirements to the Data Visualizations](#TheRationaletoMaptheBusinessRequirementstotheDataVisualizations)
+8. [Analysis Techniques Used](#AnalysisTechniquesUsed)
+9. [Ethical Considerations](#EthicalConsiderations)
+10. [Dashboard Design](#DashboardDesign)
+11. [Wireframe](#Wireframe)
+12. [Kanban Board](#KanbanBoard)
+13. [Unfixed Bugs](#UnfixedBugs)
+14. [Development Roadmap](#DevelopmentRoadmap)
+15. [Tableau Deployment](#TableauDeployment)
+16. [Main Data Analysis Libraries](#MainDataAnalysisLibraries)
+17. [Credits](#Credits)
+18. [Acknowledgements](#Acknowledgements)
 
 </details>
 
-## Project Outcomes and Key Findings
+## 2. <a name='ProjectOutcomesandKeyFindings'></a>Project Outcomes and Key Findings
 
 - Higher price ranges are clearly linked to better ratings, suggesting that diners associate higher prices with better experiences.
 
@@ -39,7 +41,7 @@
 
 - Cuisines naturally segment by price, reflecting ingredients, preparation complexity, and dining experience, from affordable fast food to premium French and Seafood dining.
 
-## Dataset Content
+## 3. <a name='DatasetContent'></a>Dataset Content
 
 - [TripAdvisor Restaurants Info for 31 Euro-Cities Dataset](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data)
 
@@ -60,7 +62,7 @@
 | **URL_TA**            | Part of the TripAdvisor URL for the restaurant page, after 'www.tripadvisor.com' (string)                               |
 | **ID_TA**             | Unique identifier of the restaurant in the TripAdvisor database (one letter + number)                                   |
 
-## Business Requirements
+## 4. <a name='BusinessRequirements'></a>Business Requirements
 
 The primary goal of this project is to translate business requirements into actionable insights through intuitive and effective visualizations. Each visualization is designed to directly address specific business questions and support data-driven decision-making:
 
@@ -72,7 +74,7 @@ The primary goal of this project is to translate business requirements into acti
 
 - **Regional Insights & Market Opportunities**: Identify underrepresented or highly-rated niche cuisines to inform market strategy.
 
-## Hypothesis and Validation
+## 5. <a name='HypothesisandValidation'></a>Hypothesis and Validation
 
 1. **Price Perception**
 
@@ -114,7 +116,7 @@ The primary goal of this project is to translate business requirements into acti
 
    - Validation Approach: Analyze the relationship between cuisine type and price range using bar charts visualizations.
 
-## Project Plan
+## 6. <a name='ProjectPlan'></a>Project Plan
 
 | Phase                                  | Description                                                                                                                                                                                                                                                                 |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -125,7 +127,7 @@ The primary goal of this project is to translate business requirements into acti
 | **5. Dashboard Development**           | • Design a wireframe for an interactive dashboard<br>• Develop the dashboard in **Tableau**<br>• Display key metrics and visualizations aligned with research hypotheses                                                                                                    |
 | **6. Key Insights & Conclusion**       | • Summarize main findings and observed patterns<br>• Highlight cultural and regional dining preferences<br>• Provide recommendations for improving restaurant strategies and market insights                                                                                |
 
-## The Rationale to Map the Business Requirements to the Data Visualizations
+## 7. <a name='TheRationaletoMaptheBusinessRequirementstotheDataVisualizations'></a>The Rationale to Map the Business Requirements to the Data Visualizations
 
 | **Business Requirement**                     | **Rationale**                                                                                                                                                                     | **Data Visualization(s)**                                                                                     |
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -134,7 +136,7 @@ The primary goal of this project is to translate business requirements into acti
 | **Cuisine Diversity & Ratings**              | Explore whether offering multiple cuisines leads to higher customer ratings and more reviews, providing strategic insight for menu diversification.                               | Boxplots and line charts showing cuisine counts vs ratings; ANOVA to test differences between groups.         |
 | **Regional Insights & Market Opportunities** | Detect underrepresented but high-rated cuisines to identify untapped opportunities and guide market positioning strategies.                                                       | Bar charts of cuisine prevalence vs average ratings; City-level cuisine distribution maps and rankings.       |
 
-## Analysis Techniques Used
+## 8. <a name='AnalysisTechniquesUsed'></a>Analysis Techniques Used
 
 This project applied a combination of exploratory data analysis (EDA), statistical testing, and data visualization to uncover insights from the [TripAdvisor Restaurants dataset](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data). The analytical approach was structured to progressively address each business requirement through targeted techniques.
 
@@ -180,11 +182,11 @@ This project applied a combination of exploratory data analysis (EDA), statistic
 
   - Grouping & Proportional Analysis: involve aggregating data by categories (e.g., city, price range, cuisine) and calculating their relative proportions. This approach was particularly useful for categorical variables, such as price ranges, where traditional regression methods were not suitable.
 
-## Ethical Considerations
+## 9. <a name='EthicalConsiderations'></a>Ethical Considerations
 
 - The dataset came from Kaggle and do not have any legal or societal issues. There was no personal data within the dataset which could expose or identify anything personal to a particular individual.
 
-## Dashboard Design
+## 10. <a name='DashboardDesign'></a>Dashboard Design
 
 The layout follows a top-down storytelling structure, which helps users grasp complex insights quickly while maintaining the option to explore deeper through filters and interactions. The dashboard was designed using Tableau after creating and refining an initial wireframe, which guided the placement of visual elements and ensured a clear, consistent flow of information throughout the final design.
 
@@ -222,18 +224,18 @@ The full interactive Tableau dashboard can be found [here](https://public.tablea
 
   - Technical users: Can drill down into cuisine categories, price ranges, and city-level distributions for deeper analysis.
 
-## Wireframe
+## 11. <a name='Wireframe'></a>Wireframe
 
 The wireframe layout for EuroDine Insights Project was created using Figma to plan the structure and organization of key visual elements. It outlines where charts, maps, and summary cards will be placed, helping to ensure a clear and logical flow of information. This stage focuses on layout and functionality rather than design details, allowing for easy adjustments before building the actual dashboard.
 
 ![Wireframe](Images\wireframe.png)
 
-## Kanban Board
+## 12. <a name='KanbanBoard'></a>Kanban Board
 
 - The kanban board screenshots can be found [here](KANBAN.md)
 - The project board can viewed [here](https://github.com/users/RanaAlaaTahon/projects/3/views/1)
 
-## Unfixed Bugs
+## 13. <a name='UnfixedBugs'></a>Unfixed Bugs
 
 No unfixed bugs were identified across the ETL, visualization notebook, or dashboard components. All features are functioning as intended, and the project delivers the expected analytical insights and interactive experience.
 
@@ -241,7 +243,7 @@ While there were no technical bugs left unresolved, I encountered some challenge
 
 Moving forward, I plan to continue improving my Tableau skills to work more efficiently and make use of more advanced features in future projects.
 
-## Development Roadmap
+## 14. <a name='DevelopmentRoadmap'></a>Development Roadmap
 
 The EuroDine Insights project followed a structured development roadmap to transform raw data into actionable insights and a fully interactive Tableau dashboard. Below is a visual overview of the key phases, challenges, and strategies:
 
@@ -269,7 +271,7 @@ Based on this project experience, the following areas have been identified for f
 
 - Data Storytelling: Further refine the ability to present insights to both technical and non-technical audiences.
 
-## Tableau Deployment
+## 15. <a name='TableauDeployment'></a>Tableau Deployment
 
 The interactive dashboard for EuroDine Insights was developed and deployed using Tableau Public. The deployment process involved publishing the final dashboard to Tableau’s cloud platform, making it accessible through a shareable public link.
 
@@ -285,11 +287,11 @@ The interactive dashboard for EuroDine Insights was developed and deployed using
 
 2.  Publishing to Tableau Public
 
-          - The completed dashboard was published to Tableau Public
+    - The completed dashboard was published to Tableau Public
 
     , a free platform that allows Tableau visualizations to be hosted online.
 
-          - While publishing, the workbook was made publicly accessible to enable sharing and embedding.
+    - While publishing, the workbook was made publicly accessible to enable sharing and embedding.
 
 3.  Accessing the Dashboard
 
@@ -303,7 +305,7 @@ The interactive dashboard for EuroDine Insights was developed and deployed using
 
   - Implement regular dataset refreshes to keep the dashboard up to date.
 
-## Main Data Analysis Libraries
+## 16. <a name='MainDataAnalysisLibraries'></a>Main Data Analysis Libraries
 
 - Pandas
 - NumPy
@@ -313,11 +315,11 @@ The interactive dashboard for EuroDine Insights was developed and deployed using
 - Tableau
 - scipy
 
-## Credits
+## 17. <a name='Credits'></a>Credits
 
 - Kaggle Dataset: [TripAdvisor Restaurants Info for 31 Euro-Cities Dataset](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data)
 - Generative AI tools: ChatGPT, GitHub Copilot
 - YouTube
 - [Hackathon 1](https://github.com/stephenbeese/Online-Retail-Analysis)
 
-## Acknowledgements
+## 18. <a name='Acknowledgements'></a>Acknowledgements

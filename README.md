@@ -176,7 +176,7 @@ The full interactive Tableau dashboard can be found [here](https://public.tablea
 
 ![Dashboard](Images\Dashboard.png)
 
-| #   | Dashboard Section / Page                                     | Content Description                                                                                                  | Visualization Type | Key Filters / Widgets        | Page Link                                                                                                                        |
+| #   | Page                                                         | Content Description                                                                                                  | Visualization Type | Key Filters                  | Page Link                                                                                                                        |
 | --- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ------------------ | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | **Header Section**                                           | Displays overall KPIs: total number of cities, restaurants, and cuisines. Sets the context for the entire dashboard. | KPI Cards / Text   | –                            | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/Insights#1)                                           |
 | 2   | **The Proportion of Rating Categories for Each Price Range** | Compares Excellent, Average, and Poor ratings across High, Medium, and Low price ranges.                             | Pie Charts (x3)    | Rating Category, Price Range | [View Page](https://public.tableau.com/authoring/EuroDineInsightsDashboard/1_TheProportionofRatingCategoriesforEachPriceRange#1) |
@@ -208,7 +208,7 @@ The full interactive Tableau dashboard can be found [here](https://public.tablea
 
 ## Wireframe
 
-- The wireframe layout for EuroDine Insights Project was created using Figma to plan the structure and organization of key visual elements. It outlines where charts, maps, and summary cards will be placed, helping to ensure a clear and logical flow of information. This stage focuses on layout and functionality rather than design details, allowing for easy adjustments before building the actual dashboard.
+The wireframe layout for EuroDine Insights Project was created using Figma to plan the structure and organization of key visual elements. It outlines where charts, maps, and summary cards will be placed, helping to ensure a clear and logical flow of information. This stage focuses on layout and functionality rather than design details, allowing for easy adjustments before building the actual dashboard.
 
 ![Wireframe](Images\wireframe.png)
 
@@ -220,6 +220,32 @@ The full interactive Tableau dashboard can be found [here](https://public.tablea
 ## Unfixed Bugs
 
 ## Development Roadmap
+
+The EuroDine Insights project followed a structured development roadmap to transform raw data into actionable insights and a fully interactive Tableau dashboard. Below is a visual overview of the key phases, challenges, and strategies:
+
+| Phase                      | Key Highlights                                                                                      | Challenges & Solutions                                                                                          |
+| -------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Research & Hypotheses**  | Defined clear business questions and formulated testable hypotheses based on dataset variables.     | Ensuring hypotheses were actionable with available data → Iteratively refined through initial data exploration. |
+| **Data Collection**        | Gathered and examined the 31-city TripAdvisor dataset.                                              | Nested fields and large file size → Used `pandas explode()` and normalization techniques to structure the data. |
+| **Data Cleaning**          | Standardized cuisine names, handled missing values, derived new columns, and removed duplicates.    | Dealt with inconsistent data through mapping tables, string cleaning, and imputation rules.                     |
+| **EDA**                    | Performed descriptive analysis, visualized distributions, and conducted ANOVA test.                 | Managed uneven data distribution by focusing on top cuisines and grouping categories for clearer comparisons.   |
+| **Visualization Notebook** | Created key visualizations for cuisine popularity, ratings, pricing trends, and city comparisons.   | Simplified charts and applied consistent labeling to ensure readability and performance with large datasets.    |
+| **Dashboard Development**  | Designed the wireframe in Figma and implemented the Tableau dashboard with KPIs, maps, and filters. | Overcame layout and performance issues through extract optimization and careful placement of visual elements.   |
+| **Review & Refinement**    | Conducted self-review to refine labeling, layout, and logical flow of dashboard pages.              | Improved navigation and communication of insights by restructuring page order and enhancing clarity.            |
+
+**Future Learning & Next Steps**
+
+Based on this project experience, the following areas have been identified for further development:
+
+- Advanced Tableau Features: Dynamic dashboards, parameter controls, and enhanced tooltips.
+
+- ETL Optimization: Explore frameworks like Spark or Dask for scaling data processing.
+
+- Web-Based Visualization: Build dashboards Streamlit for more customization.
+
+- Predictive Analytics: Apply clustering or recommendation algorithms to derive future-oriented insights.
+
+- Data Storytelling: Further refine the ability to present insights to both technical and non-technical audiences.
 
 ## Main Data Analysis Libraries
 
@@ -236,6 +262,6 @@ The full interactive Tableau dashboard can be found [here](https://public.tablea
 - Kaggle Dataset: [TripAdvisor Restaurants Info for 31 Euro-Cities Dataset](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data)
 - Generative AI tools: ChatGPT, GitHub Copilot
 - YouTube
-- https://github.com/stephenbeese/Online-Retail-Analysis
+- [Hackathon 1](https://github.com/stephenbeese/Online-Retail-Analysis)
 
 ## Acknowledgements

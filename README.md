@@ -3,7 +3,7 @@
 **EuroDine Insights** is a data analysis project based on the [TripAdvisor Restaurants Info for 31 Euro-Cities Dataset](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data)
 , featuring over 125,000 restaurants across 31 European cities. Using Python-based analytical and visualization tools, the project explores customer ratings, cuisine preferences, and regional dining trends, through statistical testing.
 
-## <a name='TableofContents'></a>Table of Contents
+## 1. <a name='TableofContents'></a>Table of Contents
 
 <details>
   <summary>Click here to expand the contents</summary>
@@ -123,7 +123,7 @@ The primary goal of this project is to translate business requirements into acti
 | **1. Research Questions & Hypotheses** | Define the main analytical objectives and relationships to explore, including:<br>• Price perception and city-level variations<br>• City vs. price range<br>• Cuisine diversity and its effect on ratings<br>• Cuisine preferences<br>• Cuisine type vs. price relationship |
 | **2. Data Collection**                 | Gather the dataset from [Kaggle](https://www.kaggle.com/datasets/damienbeneschi/krakow-ta-restaurans-data-raw/data)                                                                                                                                                         |
 | **3. Data Cleaning & Preprocessing**   | • Handle missing values<br>• Standardize cuisine names<br>• Change/convert data types<br>• Remove duplicates<br>• Add new derived columns<br>• Drop unused columns<br>• Save the cleaned dataset as a new CSV file                                                          |
-| **4. Exploratory Data Analysis (EDA)** | • Visualize key variable distributions<br>• Identify trends, patterns, and outliers<br>• Perform hypothesis testing (e.g., ANOVA, Tukey’s HSD) to validate findings                                                                                                         |
+| **4. Exploratory Data Analysis (EDA)** | • Visualize key variable distributions<br>• Identify trends, patterns, and outliers<br>• Perform hypothesis testing (e.g., ANOVA) to validate findings                                                                                                                      |
 | **5. Dashboard Development**           | • Design a wireframe for an interactive dashboard<br>• Develop the dashboard in **Tableau**<br>• Display key metrics and visualizations aligned with research hypotheses                                                                                                    |
 | **6. Key Insights & Conclusion**       | • Summarize main findings and observed patterns<br>• Highlight cultural and regional dining preferences<br>• Provide recommendations for improving restaurant strategies and market insights                                                                                |
 
@@ -134,7 +134,7 @@ The primary goal of this project is to translate business requirements into acti
 | **Customer Preferences & Cuisine Ratings**   | Identify which cuisines receive the highest ratings and whether preferences vary across European cities. This helps businesses understand cultural preferences and target demand. | Bar charts comparing average ratings by cuisine type across cities; ANOVA tests to detect rating differences. |
 | **Price Perception & City Comparison**       | Examine how pricing impacts customer ratings and how price categories are distributed across different cities, revealing economic patterns and customer expectations.             | Pie charts for price vs rating distribution; Stacked bar charts for price range distribution per city.        |
 | **Cuisine Diversity & Ratings**              | Explore whether offering multiple cuisines leads to higher customer ratings and more reviews, providing strategic insight for menu diversification.                               | Boxplots and line charts showing cuisine counts vs ratings; ANOVA to test differences between groups.         |
-| **Regional Insights & Market Opportunities** | Detect underrepresented but high-rated cuisines to identify untapped opportunities and guide market positioning strategies.                                                       | Bar charts of cuisine prevalence vs average ratings; City-level cuisine distribution maps and rankings.       |
+| **Regional Insights & Market Opportunities** | Detect underrepresented but high-rated cuisines to identify untapped opportunities and guide market positioning strategies.                                                       | Bar charts of cuisine prevalence vs average ratings and City-level cuisine distribution maps.                 |
 
 ## 8. <a name='AnalysisTechniquesUsed'></a>Analysis Techniques Used
 
@@ -218,11 +218,11 @@ The full interactive Tableau dashboard can be found [here](https://public.tablea
 
   - The dashboard is designed for both technical and non-technical audiences.
 
-  - Non-technical users: Can explore key patterns using interactive filters and intuitive visuals (pie charts, bar charts, maps).
+  - Non-technical users: can explore key patterns using interactive filters and intuitive visuals (pie charts, bar charts, maps).
 
   - KPI cards and clean labeling provide instant understanding of scale and distribution.
 
-  - Technical users: Can drill down into cuisine categories, price ranges, and city-level distributions for deeper analysis.
+  - Technical users: can drill down into cuisine categories, price ranges, and city-level distributions for deeper analysis.
 
 ## 11. <a name='Wireframe'></a>Wireframe
 
@@ -323,3 +323,6 @@ The interactive dashboard for EuroDine Insights was developed and deployed using
 - [Hackathon 1](https://github.com/stephenbeese/Online-Retail-Analysis)
 
 ## 18. <a name='Acknowledgements'></a>Acknowledgements
+
+Thanks to Vasi, for his guidance and support throughout the course.
+Also, thanks to my Team 3 colleagues for their help and collaboration whenever needed.

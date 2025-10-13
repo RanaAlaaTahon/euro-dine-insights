@@ -164,6 +164,22 @@ This project applied a combination of exploratory data analysis (EDA), statistic
 
   - Code optimization for data wrangling and statistical tests
 
+- **Core Statistical Concepts & Tests**
+
+  The following statistical concepts and tests were fundamental to the analytical approach:
+
+  - Descriptive Statistics: summarize and describe the main features of a dataset. In this project, measures such as counts, proportions, and averages were used to understand the distribution of cuisines, price categories, and ratings. This provided the foundation for identifying patterns before applying more formal tests.
+
+  - ANOVA (Analysis of Variance): is a statistical test used to determine whether there are significant differences between the means of three or more independent groups. In this project, one-way ANOVA was applied to examine whether average ratings differed significantly across different cuisine types and cuisine variety groups.
+
+  - Null Hypothesis (H₀): There is no difference in the mean ratings across groups.
+
+  - p-value: is the probability of observing the test results (or more extreme) under the assumption that the null hypothesis is true. A p-value < 0.05 is typically considered statistically significant, suggesting that the observed differences are unlikely to have occurred by chance. p-values were used to interpret the significance of results from both ANOVA and t-tests.
+
+  - t-test: is used to compare the means of two independent groups to determine if they are significantly different.
+
+  - Grouping & Proportional Analysis: involve aggregating data by categories (e.g., city, price range, cuisine) and calculating their relative proportions. This approach was particularly useful for categorical variables, such as price ranges, where traditional regression methods were not suitable.
+
 ## Ethical Considerations
 
 - The dataset came from Kaggle and do not have any legal or societal issues. There was no personal data within the dataset which could expose or identify anything personal to a particular individual.
@@ -214,8 +230,8 @@ The wireframe layout for EuroDine Insights Project was created using Figma to pl
 
 ## Kanban Board
 
-- You can find screenshots of our Kanban board [here](KANBAN.md)
-- You can view the project board [here](https://github.com/users/RanaAlaaTahon/projects/3/views/1)
+- The kanban board screenshots can be found [here](KANBAN.md)
+- The project board can viewed [here](https://github.com/users/RanaAlaaTahon/projects/3/views/1)
 
 ## Unfixed Bugs
 
@@ -252,6 +268,40 @@ Based on this project experience, the following areas have been identified for f
 - Predictive Analytics: Apply clustering or recommendation algorithms to derive future-oriented insights.
 
 - Data Storytelling: Further refine the ability to present insights to both technical and non-technical audiences.
+
+## Tableau Deployment
+
+The interactive dashboard for EuroDine Insights was developed and deployed using Tableau Public. The deployment process involved publishing the final dashboard to Tableau’s cloud platform, making it accessible through a shareable public link.
+
+**Steps for Deployment**
+
+1.  Dashboard Finalization
+
+    - All visualizations were designed and refined in Tableau Desktop.
+
+    - Filters, parameters, and interactions were tested to ensure a smooth user experience.
+
+    - Layouts were optimized for viewing on desktop browsers.
+
+2.  Publishing to Tableau Public
+
+          - The completed dashboard was published to Tableau Public
+
+    , a free platform that allows Tableau visualizations to be hosted online.
+
+          - While publishing, the workbook was made publicly accessible to enable sharing and embedding.
+
+3.  Accessing the Dashboard
+
+    - The deployed dashboard can be viewed directly through this [link](https://public.tableau.com/authoring/EuroDineInsightsDashboard/EuroDineInsightsDashboard#1)
+
+    - No additional installations are required, the dashboard runs directly in the browser.
+
+- **Future Improvements**
+
+  - Optimize the dashboard for mobile responsiveness to improve accessibility on smaller screens.
+
+  - Implement regular dataset refreshes to keep the dashboard up to date.
 
 ## Main Data Analysis Libraries
 

@@ -192,7 +192,7 @@ The layout follows a top-down storytelling structure, which helps users grasp co
 
 The full interactive Tableau dashboard can be found [here](https://public.tableau.com/authoring/EuroDineInsightsDashboard/EuroDineInsightsDashboard#1), to explore all insights and visualizations in detail.
 
-![Dashboard](Images\Dashboard.png)
+![Dashboard](Images/Dashboard.png)
 
 | #   | Page                                                         | Content Description                                                                                                  | Visualization Type | Key Filters                  | Page Link                                                                                                                        |
 | --- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ------------------ | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -228,7 +228,7 @@ The full interactive Tableau dashboard can be found [here](https://public.tablea
 
 The wireframe layout for EuroDine Insights Project was created using Figma to plan the structure and organization of key visual elements. It outlines where charts, maps, and summary cards will be placed, helping to ensure a clear and logical flow of information. This stage focuses on layout and functionality rather than design details, allowing for easy adjustments before building the actual dashboard.
 
-![Wireframe](Images\wireframe.png)
+![Wireframe](Images/wireframe.png)
 
 ## 12. <a name='KanbanBoard'></a>Kanban Board
 
